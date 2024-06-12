@@ -1,123 +1,97 @@
- *,
- *::before,
- *::after {
-     box-sizing: border-box;
- }
-
-
-.box-model {
-    width: 300px;
-    padding: 20px;
-    border: 5px solid black;
-    margin: 10px;
-}
-
-p {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333333;
-}
-
-.container {
-    position: relative;
-}
-
-.box {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 50px;
-    height: 50px;
-}
-
-.box {
-    border: 1px solid #000;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-}
-
-.grid-flex-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    .sidebar {
-            display: flex;
-            flex-direction: column;
-        }
-}
-
-.grid-item {
-    border: 1px solid black;
-    padding: 20px;
-}
-
-
-.child-selector > p {
-    color: blue;
-}
-
-.adjacent-sibling-selector{
-h2+p {
-    margin-top: 0;
-}
-}
-
-.general-sibling-selector{
-h2~p {
-    font-style: italic;
-}
-}
-
-.attribute-selector{
-    input[type="text"] {
-            background-color: #f0f0f0;
-        }
-}
-
-
-.pseudo-classes{
-    a:hover {
-            color: red;
-        }
-}
-
-.pseudo-elements{
-    p::first-line {
-            font-weight: bold;
-        }
-}
-
-.box-sizing{
-        .box {
-            width: 100px;
-            padding: 10px;
-            border: 2px solid black;
-        }
-}
-
-p::first-line {
-    font-weight: bold;
-}
-
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.box-model {
+  width: 300px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 10px;
+}
+
+.box-sizing {
+  .box {
+    width: 100px;
+    padding: 10px;
+    border: 2px solid black;
+    color: #000;
+  }
+}
+
+p {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+.container {
+  position: relative;
+}
+
+.box {
+  border: 1px solid #000;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+.child-selector > p {
+  color: blue;
+}
+
+.adjacent-sibling-selector {
+  h2 + p {
+    margin-top: 0;
+  }
+}
+
+.general-sibling-selector {
+  h2 ~ p {
+    font-style: italic;
+  }
+}
+
+.attribute-selector {
+  input[type="text"] {
+    background-color: #f0f0f0;
+  }
+}
+
+.pseudo-classes {
+  a:hover {
+    color: red;
+  }
+}
+
+.pseudo-elements {
+  p::first-line {
+    font-weight: bold;
+  }
+}
+
+.not-h2 {
+  :not(span) {
+    color: yellow;
+  }
+}
+
+:root {
+  --main-color: rgba(173, 204, 0, 0.941);
+}
+
+.vaiable-color {
+  h1 {
+    color: var(--main-color);
+  }
+}
+
+.calculate-width {
+  width: calc(100% - 50px);
+  margin: 0 !important;
 }

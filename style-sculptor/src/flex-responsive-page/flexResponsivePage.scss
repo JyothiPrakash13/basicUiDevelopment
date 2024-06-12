@@ -1,0 +1,79 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.flex-main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-wrapper {
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.main > article {
+  flex: 1;
+  min-width: 300px;
+  /* Ensures that the article doesn't shrink beyond 300px */
+  background: #e2e2e2;
+  padding: 1rem;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+  /* Sidebar will not grow or shrink but remain at 200px */
+  background: #f4f4f4;
+  padding: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+  width: 100%;
+  bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: -1;
+    /* Moves sidebar above the articles on smaller screens */
+  }
+}
