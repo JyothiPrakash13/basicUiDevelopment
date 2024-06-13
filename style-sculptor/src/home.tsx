@@ -4,17 +4,17 @@ function HomePage() {
   return (
     <div className="Home">
       <div className="App-header">
-        <div className="box-model">
+        {/* <div className="box-model">
           <p>some structure</p>
-        </div>
+        </div> */}
 
-        <div className="box-sizing">
+        {/* <div className="box-sizing">
           <div className="box">
             This box will maintain its width including padding and border.
           </div>
-        </div>
+        </div> */}
 
-        <div className="child-selector">
+        {/* <div className="child-selector">
           <p>
             This paragraph will be blue because it's a direct child of
             .container div.
@@ -24,24 +24,24 @@ function HomePage() {
               This paragraph will not be blue because it's not a direct child.
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="adjacent-sibling-selector">
+        {/* <div className="adjacent-sibling-selector">
           <h2>Heading</h2>
           <p>The first paragraph after the heading will have no top margin.</p>
           <p>This paragraph will not be affected.</p>
-        </div>
+        </div> */}
 
-        <div className="general-sibling-selector">
+        {/* <div className="general-sibling-selector">
           <h2>Heading</h2>
           <p>This paragraph will be italic because it's a sibling of h2.</p>
           <div>Another element</div>
           <p>
             This paragraph will also be italic because it's a sibling of h2.
           </p>
-        </div>
+        </div> */}
 
-        <div className="attribute-selector">
+        {/* <div className="attribute-selector">
           <input
             type="text"
             placeholder="This input will have a light grey background"
@@ -50,13 +50,13 @@ function HomePage() {
             type="password"
             placeholder="This input will not be affected"
           />
-        </div>
+        </div> */}
 
-        <div className="pseudo-classes">
+        {/* <div className="pseudo-classes">
           <a href="#">This link will turn red when hovered over.</a>
-        </div>
+        </div> */}
 
-        <div className="pseudo-elements">
+        {/* <div className="pseudo-elements">
           <p>
             The first line of this paragraph will be bold, but not the second
             line as you can when the line breaks to the next it will be normal.
@@ -66,20 +66,20 @@ function HomePage() {
             corporis consequatur eius quas cupiditate perferendis delectus
             perspiciatis.
           </p>
-        </div>
+        </div> */}
 
-        <div className="not-h2">
+        {/* <div className="not-h2">
           <h3>This h3 tag which will be affected</h3>
           <span>This h2 tag which will not be affected</span>
-        </div>
+        </div> */}
 
-        <div className="vaiable-color">
+        {/* <div className="vaiable-color">
           <h1>This will have root color</h1>
-        </div>
+        </div> */}
 
-        <div className="calculate-width">
+        {/* <div className="calculate-width">
           <h1>This div width will reduce by 50 px from 100%</h1>
-        </div>
+        </div> */}
       </div>
     </div>
   );

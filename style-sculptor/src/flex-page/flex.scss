@@ -1,15 +1,22 @@
- .flex-container {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     padding: 20px;
-     background: #ddd;
- }
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #ddd;
+  height: 300px;
+}
 
- .flex-item {
-     background: #f9f9f9;
-     padding: 20px;
-     margin: 10px;
-     flex: 1;
-     /* Each item will take up equal space */
- }
+.flex-item {
+  width: 30%;
+  flex: 1 1 0;
+  display: grid;
+}
+
+.flex-item-child {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  max-width: 200px;
+  /* Each item will take up equal space */
+}
